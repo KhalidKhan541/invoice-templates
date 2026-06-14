@@ -1,0 +1,12 @@
+{
+  "name": "invoice-template-marketplace",
+  "version": "1.0.0",
+  "description": "InvoiceCraft - Premium Invoice Template Marketplace",
+  "scripts": {
+    "deploy": "wrangler pages deploy public --project-name invoice-templates",
+    "dev": "wrangler pages dev public"
+  },
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  }
+}

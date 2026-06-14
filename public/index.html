@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InvoiceCraft - Premium Invoice Template Marketplace</title>
+  <meta name="description" content="Find the perfect invoice template at Invoice Template Marketplace. 24+ professional templates for freelancers and businesses. Free and premium options available.">
+  <meta name="keywords" content="invoice template, invoice template free, professional invoice, freelancer invoice, business invoice, invoice design, creative invoice">
+  <meta name="author" content="Invoice Template Marketplace">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Invoice Template Marketplace - Buy & Sell Invoice Templates">
+  <meta property="og:description" content="Find the perfect invoice template. 24+ professional templates for freelancers and businesses.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://invoice-templates.pages.dev">
+  <meta property="og:image" content="https://invoice-templates.pages.dev/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Invoice Template Marketplace - Buy & Sell Invoice Templates">
+  <meta name="twitter:description" content="Find the perfect invoice template. 24+ professional templates for freelancers.">
+  <link rel="canonical" href="https://invoice-templates.pages.dev">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8007430228126096" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="url(#lg)"/><path d="M8 10h16M8 16h12M8 22h8" stroke="#fff" stroke-width="2" stroke-linecap="round"/><defs><linearGradient id="lg" x1="0" y1="0" x2="32" y2="32"><stop stop-color="#4f46e5"/><stop offset="1" stop-color="#7c3aed"/></linearGradient></defs></svg>
+        <span>InvoiceCraft</span>
+      </div>
+      <nav class="nav-links">
+        <a href="#templates" class="nav-link active">Templates</a>
+        <a href="#free" class="nav-link">Free</a>
+        <a href="#submit" class="nav-link">Sell Templates</a>
+      </nav>
+      <div class="header-actions">
+        <div class="search-bar">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          <input type="text" id="searchInput" placeholder="Search templates...">
+        </div>
+        <button class="cart-btn" id="cartBtn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Professional Invoice Templates<br><span class="gradient-text">That Get You Paid Faster</span></h1>
+      <p>Choose from 200+ beautifully designed invoice templates. Customize, send, and get paid — all in one place.</p>
+      <div class="hero-stats">
+        <div class="stat"><strong>200+</strong><span>Templates</span></div>
+        <div class="stat"><strong>50K+</strong><span>Downloads</span></div>
+        <div class="stat"><strong>4.9</strong><span>Avg Rating</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="filters-section" id="templates">
+    <div class="filters-bar">
+      <div class="filter-group">
+        <label>Style</label>
+        <select id="filterStyle">
+          <option value="all">All Styles</option>
+          <option value="professional">Professional</option>
+          <option value="creative">Creative</option>
+          <option value="minimal">Minimal</option>
+          <option value="corporate">Corporate</option>
+          <option value="freelancer">Freelancer</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label>Color</label>
+        <select id="filterColor">
+          <option value="all">All Colors</option>
+          <option value="blue">Blue</option>
+          <option value="green">Green</option>
+          <option value="red">Red</option>
+          <option value="purple">Purple</option>
+          <option value="black">Black</option>
+          <option value="orange">Orange</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label>Industry</label>
+        <select id="filterIndustry">
+          <option value="all">All Industries</option>
+          <option value="technology">Technology</option>
+          <option value="design">Design</option>
+          <option value="consulting">Consulting</option>
+          <option value="construction">Construction</option>
+          <option value="healthcare">Healthcare</option>
+          <option value="marketing">Marketing</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label>Price</label>
+        <select id="filterPrice">
+          <option value="all">All Prices</option>
+          <option value="free">Free</option>
+          <option value="paid">Paid</option>
+        </select>
+      </div>
+    </div>
+  </section>
+
+  <main class="main-content">
+    <div class="template-grid" id="templateGrid"></div>
+  </main>
+
+  <section class="free-section" id="free">
+    <div class="section-header">
+      <h2>Free Invoice Templates</h2>
+      <p>Start invoicing at no cost with our free templates</p>
+    </div>
+    <div class="template-grid" id="freeGrid"></div>
+  </section>
+
+  <section class="adsense-banner">
+    <div class="ad-placeholder">
+      <span>Advertisement</span>
+      <ins class="adsbygoogle" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    </div>
+  </section>
+
+  <section class="submit-section" id="submit">
+    <div class="submit-content">
+      <h2>Sell Your Invoice Templates</h2>
+      <p>Join our marketplace of creators. Earn money selling your invoice designs to thousands of businesses worldwide.</p>
+      <div class="submit-benefits">
+        <div class="benefit">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          <div><strong>85% Commission</strong><span>Keep 85% of every sale</span></div>
+        </div>
+        <div class="benefit">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          <div><strong>50K+ Buyers</strong><span>Access to our buyer network</span></div>
+        </div>
+        <div class="benefit">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          <div><strong>Instant Payout</strong><span>Get paid within 24 hours</span></div>
+        </div>
+      </div>
+      <form class="submit-form" id="submitForm">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Email Address" required>
+        <input type="text" placeholder="Portfolio URL (optional)">
+        <textarea placeholder="Tell us about your design experience..." rows="3"></textarea>
+        <button type="submit" class="btn-primary">Apply to Sell</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <div class="logo">
+          <svg width="28" height="28" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="url(#lg2)"/><path d="M8 10h16M8 16h12M8 22h8" stroke="#fff" stroke-width="2" stroke-linecap="round"/><defs><linearGradient id="lg2" x1="0" y1="0" x2="32" y2="32"><stop stop-color="#4f46e5"/><stop offset="1" stop-color="#7c3aed"/></linearGradient></defs></svg>
+          <span>InvoiceCraft</span>
+        </div>
+        <p>Premium invoice templates for modern businesses.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Marketplace</h4>
+        <a href="#templates">Templates</a>
+        <a href="#free">Free Templates</a>
+        <a href="#submit">Sell Templates</a>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <a href="#">Help Center</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Refund Policy</a>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <a href="#">Terms of Service</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">License Agreement</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 InvoiceCraft. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div class="modal-overlay" id="previewModal">
+    <div class="modal">
+      <button class="modal-close" id="modalClose">&times;</button>
+      <div class="modal-body">
+        <div class="modal-preview" id="modalPreview"></div>
+        <div class="modal-info">
+          <h2 id="modalTitle"></h2>
+          <div class="modal-meta">
+            <span class="modal-category" id="modalCategory"></span>
+            <div class="modal-rating" id="modalRating"></div>
+          </div>
+          <p class="modal-description" id="modalDescription"></p>
+          <div class="modal-reviews" id="modalReviews"></div>
+          <div class="modal-price-row">
+            <span class="modal-price" id="modalPrice"></span>
+            <button class="btn-primary btn-add-cart" id="modalAddCart">Add to Cart</button>
+          </div>
+          <button class="btn-secondary btn-customize" id="modalCustomize">Customize Template</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="editorModal">
+    <div class="modal modal-editor">
+      <button class="modal-close" id="editorClose">&times;</button>
+      <div class="editor-header">
+        <h2>Template Editor</h2>
+        <p id="editorTemplateName"></p>
+      </div>
+      <div class="editor-body">
+        <div class="editor-sidebar">
+          <h3>Invoice Details</h3>
+          <label>Invoice Number</label>
+          <input type="text" id="editInvoiceNum" value="INV-001">
+          <label>From (Your Business)</label>
+          <input type="text" id="editFrom" value="Your Company LLC">
+          <input type="text" id="editFromAddr" value="123 Business St">
+          <label>Bill To</label>
+          <input type="text" id="editTo" value="Client Corporation">
+          <input type="text" id="editToAddr" value="456 Client Ave">
+          <label>Due Date</label>
+          <input type="date" id="editDate">
+          <h3>Line Items</h3>
+          <div id="lineItems">
+            <div class="line-item">
+              <input type="text" placeholder="Description" value="Web Design Services">
+              <input type="number" placeholder="Qty" value="1" min="1">
+              <input type="number" placeholder="Rate" value="1500" min="0">
+            </div>
+            <div class="line-item">
+              <input type="text" placeholder="Description" value="Logo Design">
+              <input type="number" placeholder="Qty" value="1" min="1">
+              <input type="number" placeholder="Rate" value="500" min="0">
+            </div>
+          </div>
+          <button class="btn-secondary btn-small" id="addLineItem">+ Add Item</button>
+          <label>Tax Rate (%)</label>
+          <input type="number" id="editTax" value="10" min="0" max="100">
+          <label>Notes</label>
+          <textarea id="editNotes" rows="2">Payment due within 30 days. Thank you for your business!</textarea>
+        </div>
+        <div class="editor-preview">
+          <div id="invoicePreviewArea"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <h3>Shopping Cart</h3>
+      <button class="cart-close" id="cartClose">&times;</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total:</span>
+        <span id="cartTotal">$0.00</span>
+      </div>
+      <button class="btn-primary btn-checkout" id="checkoutBtn">Proceed to Checkout</button>
+    </div>
+  </div>
+  <div class="cart-overlay" id="cartOverlay"></div>
+
+  <div class="modal-overlay" id="checkoutModal">
+    <div class="modal modal-checkout">
+      <button class="modal-close" id="checkoutClose">&times;</button>
+      <div class="checkout-content">
+        <h2>Checkout</h2>
+        <div class="checkout-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label>First Name</label>
+              <input type="text" placeholder="John">
+            </div>
+            <div class="form-group">
+              <label>Last Name</label>
+              <input type="text" placeholder="Doe">
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" placeholder="john@example.com">
+          </div>
+          <div class="form-group">
+            <label>Card Number</label>
+            <input type="text" placeholder="4242 4242 4242 4242">
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Expiry</label>
+              <input type="text" placeholder="MM/YY">
+            </div>
+            <div class="form-group">
+              <label>CVC</label>
+              <input type="text" placeholder="123">
+            </div>
+          </div>
+          <div class="checkout-summary" id="checkoutSummary"></div>
+          <button class="btn-primary btn-pay" id="payBtn">Pay Now</button>
+          <p class="checkout-note">This is a simulated checkout for demo purposes.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
